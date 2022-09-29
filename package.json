@@ -4,7 +4,9 @@
 	"description": "Polyfills for Object functions",
 	"main": "init.lua",
 	"typings": "index.d.ts",
-	"scripts": {},
+	"scripts": {
+		"distribute": "npm publish"
+	},
 	"author": "",
 	"license": "ISC",
 	"repository": {
