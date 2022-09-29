@@ -62,6 +62,13 @@ local function deepCopyHelper(object, encountered)
 		result[k] = v
 	end
 
+	if type(object) == "table" then
+        local refMetatable = getmetatable(object)
+        if refMetatable then
+            setmetatable(result, refMetatable)
+        end
+    end
+
 	return result
 end
 
